@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="request_cell" rowHeight="302" id="XMp-N4-Rgu" customClass="RequestCell" customModule="Sponsy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="450" height="302"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="XMp-N4-Rgu" id="Sny-tb-j2S">
+                <rect key="frame" x="0.0" y="0.0" width="450" height="301"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="254" verticalCompressionResistancePriority="763" text="Somebody" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k6a-Qg-xZs" userLabel="title">
+                        <rect key="frame" x="10" y="10" width="430" height="21.5"/>
+                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="18"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Message..." lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="d9d-Kt-cS7" userLabel="message">
+                        <rect key="frame" x="10" y="39.5" width="430" height="252"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="k6a-Qg-xZs" firstAttribute="leading" secondItem="Sny-tb-j2S" secondAttribute="leading" constant="10" id="GEO-9m-mdf"/>
+                    <constraint firstItem="d9d-Kt-cS7" firstAttribute="trailing" secondItem="k6a-Qg-xZs" secondAttribute="trailing" id="GbH-Ds-jud"/>
+                    <constraint firstAttribute="bottom" secondItem="d9d-Kt-cS7" secondAttribute="bottom" constant="10" id="Lv1-34-ChF"/>
+                    <constraint firstItem="d9d-Kt-cS7" firstAttribute="leading" secondItem="k6a-Qg-xZs" secondAttribute="leading" id="aFR-7P-NR6"/>
+                    <constraint firstItem="d9d-Kt-cS7" firstAttribute="top" secondItem="k6a-Qg-xZs" secondAttribute="bottom" constant="8" id="dVX-5I-kjV"/>
+                    <constraint firstAttribute="trailing" secondItem="k6a-Qg-xZs" secondAttribute="trailing" constant="10" id="gBy-I7-e0B"/>
+                    <constraint firstItem="k6a-Qg-xZs" firstAttribute="top" secondItem="Sny-tb-j2S" secondAttribute="top" constant="10" id="gdE-to-64j"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="message_text" destination="d9d-Kt-cS7" id="lkk-wc-iYE"/>
+                <outlet property="title_text" destination="k6a-Qg-xZs" id="SCc-iv-sIW"/>
+            </connections>
+            <point key="canvasLocation" x="-4" y="160"/>
+        </tableViewCell>
+    </objects>
+</document>
