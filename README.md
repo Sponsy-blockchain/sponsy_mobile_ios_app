@@ -5,4 +5,4 @@ As a part of our decentralized sponsorship solution, Sponsy has released a mobil
 <a href="https://itunes.apple.com/us/app/sponsy/id1295314583">Download the app from the Appstore</a>
 
 # Screenshots
-![sponsy_app](images/app_screen.png)
+![sponsy_app](app_screens.jpg)
