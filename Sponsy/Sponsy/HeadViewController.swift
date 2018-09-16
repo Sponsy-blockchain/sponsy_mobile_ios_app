@@ -50,7 +50,19 @@ class HeadViewController: UIViewController, UIViewControllerTransitioningDelegat
         navigationController!.interactivePopGestureRecognizer?.delegate = self
         navigationItem.title = "Sponsess"
         anim_controller.navController = self.navigationController!
-        bottom_bar = BottomTabBar(frame: CGRect(x: 0, y: view.bounds.height - BOTTOM_BAR_HEIGHT - navigationController!.navigationBar.frame.maxY, width: view.bounds.width, height: BOTTOM_BAR_HEIGHT))
+        var topSafeArea: CGFloat
+        var bottomSafeArea: CGFloat
+        if #available(iOS 11.0, *) {
+            topSafeArea = view.safeAreaInsets.top
+            bottomSafeArea = view.safeAreaInsets.bottom
+        } else {
+            topSafeArea = topLayoutGuide.length
+            bottomSafeArea = bottomLayoutGuide.length
+        }
+        print("DATEAIL SAFE")
+        print(bottomSafeArea)
+        print(navigationController!.navigationBar.frame.maxY)
+        bottom_bar = BottomTabBar(frame: CGRect(x: 0, y: view.bounds.height - bottomSafeArea - BOTTOM_BAR_HEIGHT - navigationController!.navigationBar.frame.maxY, width: view.bounds.width, height: BOTTOM_BAR_HEIGHT))
         bottom_bar.addTarget(self, action: #selector(HeadViewController.tabChanged(_:)), for: .valueChanged)
         view.addSubview(bottom_bar)
         tabs_content_vc[0] = storyboard!.instantiateViewController(withIdentifier: "topics_opinions_explorer_vc") as! ChildTabViewController
@@ -127,6 +139,17 @@ class HeadViewController: UIViewController, UIViewControllerTransitioningDelegat
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         print("head vc appeared")
+        var topSafeArea: CGFloat
+        var bottomSafeArea: CGFloat
+        if #available(iOS 11.0, *) {
+            topSafeArea = view.safeAreaInsets.top
+            bottomSafeArea = view.safeAreaInsets.bottom
+        } else {
+            topSafeArea = topLayoutGuide.length
+            bottomSafeArea = bottomLayoutGuide.length
+        }
+        bottom_bar.frame = CGRect(x: 0, y: view.bounds.height - bottomSafeArea - BOTTOM_BAR_HEIGHT, width: view.bounds.width, height: BOTTOM_BAR_HEIGHT)
+        print("DATEAIL SAFE NEW")
        // NSNotificationCenter.defaultCenter().addObserver(self, selector: "openTopic:", name: "notification_open_topic", object: nil)
     }
     

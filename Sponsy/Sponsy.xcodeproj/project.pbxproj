@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1CE5DE32C8D58F02760B2868 /* Pods_Sponsy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83EAF18AFC9EBB3BB2A63350 /* Pods_Sponsy.framework */; };
+		26182485213C41F6006157C4 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26182484213C41F6006157C4 /* InitialViewController.swift */; };
 		841D37811F74289F00E62556 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841D37801F74289F00E62556 /* AppDelegate.swift */; };
 		841D37881F74289F00E62556 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 841D37871F74289F00E62556 /* Assets.xcassets */; };
 		841D378B1F74289F00E62556 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 841D37891F74289F00E62556 /* LaunchScreen.storyboard */; };
@@ -49,6 +50,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		26182484213C41F6006157C4 /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
 		73EB29F496B68B991A186BC2 /* Pods-Sponsy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sponsy.release.xcconfig"; path = "Pods/Target Support Files/Pods-Sponsy/Pods-Sponsy.release.xcconfig"; sourceTree = "<group>"; };
 		83EAF18AFC9EBB3BB2A63350 /* Pods_Sponsy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sponsy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		841D377D1F74289F00E62556 /* Sponsy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sponsy.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -147,6 +149,7 @@
 				84E58BAC1F755610006C75FE /* RequestsViewController.swift */,
 				84D9F5821F74316E0078437E /* LoginVIewController.swift */,
 				84D9F5831F74316E0078437E /* Main.storyboard */,
+				26182484213C41F6006157C4 /* InitialViewController.swift */,
 				84D9F5841F74316E0078437E /* noyh_board.otf */,
 				84D9F5871F74316E0078437E /* pr_bold.otf */,
 				84D9F5881F74316E0078437E /* pr_cond_bold.otf */,
@@ -340,6 +343,7 @@
 				84D9F5BB1F74316E0078437E /* TopicsOpinionsLister.swift in Sources */,
 				84D9F5A71F74316E0078437E /* HeadViewController.swift in Sources */,
 				84E58BAD1F755610006C75FE /* RequestsViewController.swift in Sources */,
+				26182485213C41F6006157C4 /* InitialViewController.swift in Sources */,
 				84D9F5A81F74316E0078437E /* LoginVIewController.swift in Sources */,
 				84D9F5991F74316E0078437E /* AnimationControllers.swift in Sources */,
 				84D9F5A51F74316E0078437E /* General.swift in Sources */,
@@ -479,7 +483,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 439VGN7Y7Z;
 				INFOPLIST_FILE = Sponsy/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Vanoproduction.Sponsy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -494,7 +498,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 439VGN7Y7Z;
 				INFOPLIST_FILE = Sponsy/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Vanoproduction.Sponsy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
